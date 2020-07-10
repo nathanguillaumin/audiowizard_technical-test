@@ -37,7 +37,7 @@ const SecondPage = () => {
                 Femme
                 </button>
             </div>
-                <NavLink to='/third' className='submit-link'><button type="submit" className="btn btn-primary submit-home-page"><i class="fas fa-arrow-right"></i></button></NavLink>
+                <NavLink to='/third' className='submit-link'><button type="submit" className="btn btn-primary submit-home-page"><i className="fas fa-arrow-right"></i></button></NavLink>
         </form>
     </div>
     );
