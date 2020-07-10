@@ -4,10 +4,7 @@ import '../styles/pages.css';
 import UserInfosContext from '../context/UserInfosContext';
 
 const HomePage = () => {
-    const [user, setUser] = useState({
-        lastName: '',
-        firstName: ''
-    })
+    const { user, setUser } = useContext(UserInfosContext)
 
     const handleChangeForm = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value });
