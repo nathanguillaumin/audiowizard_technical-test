@@ -1,3 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Welcome to my repo concerning the technical test of AudioWizard !
 
-### Bienvenue sur mon repo répondant au test technique de la société AudioWizard !
+This project was bootstrapped with Create React App.
+
+You can visit the app on: https://aw-technicaltest-nathanguillaumin.netlify.app/
