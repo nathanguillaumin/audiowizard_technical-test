@@ -25,9 +25,9 @@ const TopNav = () => {
                     Thibaut Gressier
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a className="dropdown-item" href="#">Mon compte</a>
-                    <a className="dropdown-item" href="#">Mon profil</a>
-                    <a className="dropdown-item" href="#">Se déconnecter</a>
+                    <a className="dropdown-item" href="/">Mon compte</a>
+                    <a className="dropdown-item" href="/">Mon profil</a>
+                    <a className="dropdown-item" href="/">Se déconnecter</a>
                 </div>
             </div>
         </div>
