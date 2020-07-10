@@ -11,7 +11,6 @@ function App() {
     <Router>
       <div className="App">
         <TopNav />
-        <LeftNav />
         <Switch>
           <Route exact path='/'><HomePage /></Route>
           <Route exact path='/second'><SecondPage /></Route>
