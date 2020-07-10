@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/pages.css'
+import '../styles/pages.css';
+import UserInfosContext from '../context/UserInfosContext';
 
 const HomePage = () => {
     const [user, setUser] = useState({
