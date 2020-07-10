@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/pages.css'
 
 const HomePage = () => {
+    const [user, setUser] = useState({
+        lastName: '',
+        firstName: ''
+    })
+
+    const handleChangeForm = (e) => {
+        setUser({ ...user, [e.target.name]: e.target.value });
+    };
+
     return (
         <div className='page-container'>
             <div className="card">
@@ -13,8 +22,24 @@ const HomePage = () => {
 
             <form className="input-group flex-nowrap">
                 <div className='input-name-container'>
-                    <input type="text" className="form-control" placeholder="Nom" aria-label="Username" aria-describedby="addon-wrapping" />
-                    <input type="text" className="form-control" placeholder="Prénom" aria-label="Username" aria-describedby="addon-wrapping" />
+                    <input 
+                        type="text" 
+                        className="form-control" 
+                        value={user.lastName}
+                        onChange={(e) => handleChangeForm(e)}
+                        aria-label="Username" 
+                        aria-describedby="addon-wrapping"
+                        name='lastName'
+                    />
+                    <input 
+                        type="text" 
+                        className="form-control" 
+                        value={user.firstName} 
+                        onChange={(e) => handleChangeForm(e)}
+                        aria-label="Username" 
+                        aria-describedby="addon-wrapping"
+                        name='firstName' 
+                    />
                 </div>
                     <NavLink to='/second' className='submit-link'><button type="submit" className="btn btn-primary submit-home-page"><i class="fas fa-arrow-right"></i></button></NavLink>
             </form>
