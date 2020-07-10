@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import UserInfosContext from '../context/UserInfosContext';
+import '../styles/pages.css';
 
 const ThirdPage = () => {
+    const { user, gender } = useContext(UserInfosContext)
+
     return (
-        <div>
-            
+        <div className='page-container'>
+            <h3>
+                {gender ==='man' ? 'Monsieur ' : 'Madame '} 
+                {user.firstName} {user.lastName}
+            </h3>
         </div>
     );
 };

@@ -2,6 +2,10 @@
     margin: 100px;
 }
 
+.page-container > h3 {
+    text-align: center;
+}
+
 .input-group {
     display: flex;
     flex-direction: column;
