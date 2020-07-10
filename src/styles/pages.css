@@ -1,0 +1,75 @@
+.page-container {
+    margin: 100px;
+}
+
+.page-container > h3 {
+    text-align: center;
+    font-family: 'Raleway';
+    color: #18bc9c;
+}
+
+.card-body {
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+form > div > .form-control {
+    width: 30%;
+    margin: 20px;
+}
+
+.submit-link {
+    margin: 0 auto;
+    width: 15%;
+}
+
+.submit-home-page {
+    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .page-container > h3 {
+        font-size: 20px;
+    }
+
+    .submit-link {
+        width: 30%;
+    }
+
+    .input-name-container {
+        padding: 0;
+    }
+
+    form > div > .form-control {
+        margin: 10px;
+    }
+
+    .form-control::placeholder {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .page-container {
+        margin: 30px;
+    }
+}
