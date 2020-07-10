@@ -40,3 +40,36 @@ form > div > .form-control {
 .submit-home-page {
     width: 100%;
 }
+
+@media screen and (max-width: 550px) {
+    .page-container > h3 {
+        font-size: 20px;
+    }
+
+    .submit-link {
+        width: 30%;
+    }
+
+    .input-name-container {
+        padding: 0;
+    }
+
+    form > div > .form-control {
+        margin: 10px;
+    }
+
+    .form-control::placeholder {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .page-container {
+        margin: 30px;
+    }
+}

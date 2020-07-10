@@ -118,4 +118,8 @@ nav > ul > hr {
         padding: 2px 10px;
         text-align: left;
     }
+
+    .logo-audiowizard {
+        display: none;
+    }
 }
