@@ -1,0 +1,27 @@
+.page-container {
+    margin: 100px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name-container {
+    display: flex;
+    justify-content: center;
+}
+
+form > div > .form-control {
+    width: 30%;
+    margin: 20px;
+}
+
+.submit-link {
+    margin: 0 auto;
+    width: 15%;
+}
+
+.submit-home-page {
+    width: 100%;
+}
