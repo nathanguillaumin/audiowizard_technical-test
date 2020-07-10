@@ -103,3 +103,19 @@ nav > ul > hr {
     display: flex;
     align-items: center;
 }
+
+/* Media queries */
+@media screen and (max-width: 550px) {
+    #dropdownMenuButton {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    div.dropdown.show > div > a {
+        font-size: 10px;
+        padding: 2px 10px;
+        text-align: left;
+    }
+}

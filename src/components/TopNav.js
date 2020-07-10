@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LeftNav from './LeftNav';
 import '../styles/topnav.css';
-import BurgerButton from './BurgerButton';
+import { Link } from 'react-router-dom';
 
 const TopNav = () => {
     const [openBurger, setOpenBurger] = useState(false);
@@ -18,7 +18,7 @@ const TopNav = () => {
         <div className='topnav-container'>
             <LeftNav handleOpen={openBurgerMenu} handleClose={closeBurgerMenu} show={openBurger} />
             <div className='logo-container'>
-                <img className='logo-audiowizard' src={require('../images/logo_audiowizard.png')} alt='logo AudioWizard' />
+                <Link to='/'><img className='logo-audiowizard' src={require('../images/logo_audiowizard.png')} alt='logo AudioWizard' /></Link>
             </div>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

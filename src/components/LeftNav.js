@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import BurgerButton from './BurgerButton';
-import '../styles/leftnav.css';
 
 const LeftNav = ({ show, handleOpen, handleClose }) => {
     let navClasses = 'nav-menu';

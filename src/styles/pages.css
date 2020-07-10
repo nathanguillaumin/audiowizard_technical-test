@@ -8,6 +8,11 @@
     color: #18bc9c;
 }
 
+.card-body {
+    margin: 0 auto;
+    font-weight: 600;
+}
+
 .input-group {
     display: flex;
     flex-direction: column;
@@ -16,6 +21,10 @@
 .input-name-container {
     display: flex;
     justify-content: center;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
 form > div > .form-control {
