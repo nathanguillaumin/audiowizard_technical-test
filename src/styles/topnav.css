@@ -1,0 +1,42 @@
+.topnav-container {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(50deg, #00b8d9 0, #0077d9 100%);
+}
+
+.logo-container {
+    margin: 20px;
+}
+
+.logo-audiowizard {
+    width: 150px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#dropdownMenuButton {
+    height: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    outline: none;
+}
+
+#dropdownMenuButton:focus {
+    box-shadow: none;
+}
+
+div.dropdown.show > div {
+    border-color: #18bc9c;
+}
+
+div.dropdown.show > div > a {
+    color: #18bc9c;
+}
