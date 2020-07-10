@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const SecondPage = () => {
+    const [gender, setGender] = useState('')
+
+    const handleChoose = (e) => {
+        setGender(e.target.id)
+    }
+
     return (
         <div className='page-container'>
         <div className="card">
@@ -12,8 +18,23 @@ const SecondPage = () => {
 
         <form className="input-group flex-nowrap">
             <div className='input-name-container'>
-                <button type="button" className="btn btn-light form-control">Homme</button>
-                <button type="button" className="btn btn-light form-control">Femme</button>
+                <button 
+                    type="button" 
+                    id='man' 
+                    className="btn btn-light form-control"
+                    onClick={(e) => handleChoose(e)}
+                >
+                Homme
+                </button>
+
+                <button 
+                    type="button" 
+                    id='woman' 
+                    className="btn btn-light form-control"
+                    onClick={(e) => handleChoose(e)}
+                >
+                Femme
+                </button>
             </div>
                 <NavLink to='/third' className='submit-link'><button type="submit" className="btn btn-primary submit-home-page"><i class="fas fa-arrow-right"></i></button></NavLink>
         </form>
