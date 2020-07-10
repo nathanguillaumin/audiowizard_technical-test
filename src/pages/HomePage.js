@@ -23,6 +23,7 @@ const HomePage = () => {
                     <input 
                         type="text" 
                         className="form-control" 
+                        placeholder='Nom'
                         value={user.lastName}
                         onChange={(e) => handleChangeForm(e)}
                         aria-label="Username" 
@@ -31,7 +32,8 @@ const HomePage = () => {
                     />
                     <input 
                         type="text" 
-                        className="form-control" 
+                        className="form-control"
+                        placeholder='Prénom'
                         value={user.firstName} 
                         onChange={(e) => handleChangeForm(e)}
                         aria-label="Username" 
