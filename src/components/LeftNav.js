@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/leftnav.css'
 
 const LeftNav = () => {
     return (
-        <div>
+        <div className='leftnav-container'>
             
         </div>
     );
